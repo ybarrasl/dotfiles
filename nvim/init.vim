@@ -33,7 +33,7 @@ let g:jedi#completions_enabled = 0
 " open the go-to function in split, not another buffer
 let g:jedi#use_splits_not_buffers = "right"
 
-let g:airline_theme=gruvbox " <theme> is a valid theme name
+" let g:airline_theme=<theme> " <theme> is a valid theme name
 
 
 
