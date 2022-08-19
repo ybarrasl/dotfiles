@@ -1,9 +1,21 @@
 #!/usr/bin/fish
 echo " ##### Perfoming setup config files #####"
 
+
 # Create links
 echo " ##### Setting up Symlinks #####"
-ln -s ~/repo/dotfiles/nvim ~/.config/nvim
+set nvim_configs="~/.config/nvim"
+set config_fish="~/.config/fish/config.fish"
+
+if test -d $nvim_configs
+    rm -f $nvim_configs
+end
+
+if test -e $config_fish
+    rm -f $config_fish
+end
+
+ln -s ~/repo/dotfiles/nvim $nvim_configs
 ln -s ~/repo/dotfiles/fish/config.fish ~/.config/fish/config.fish
 
 echo " ##### Installing fisher for the fish shell #####"
