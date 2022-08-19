@@ -4,8 +4,8 @@ echo " ##### Perfoming setup config files #####"
 
 # Create links
 echo " ##### Setting up Symlinks #####"
-set nvim_configs="~/.config/nvim"
-set config_fish="~/.config/fish/config.fish"
+set nvim_configs "~/.config/nvim"
+set config_fish "~/.config/fish/config.fish"
 
 if test -d $nvim_configs
     rm -f $nvim_configs
