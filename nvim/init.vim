@@ -47,5 +47,12 @@ set background=dark " use dark mode
 " set background=light " uncomment to use light mode
 
 " Line Number Displays Hybrid - current line number + relative line numbers
-set number
-set relativenumber
+set number               " display line number
+set relativenumber       " display relative line numbers
+set colorcolumn=80       " display color when line reaches the pep8 standards
+set smartindent          " auto indent on new lines, see :help smartindent
+set expandtab            " expanding tab to spaces
+set tabstop=4            " setting tab to 4 columns
+set shiftwidth=4         " setting tab to 4 columns
+set showmatch            " display matching brackets or parenthesis
+                                        
