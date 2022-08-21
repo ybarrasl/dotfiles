@@ -22,12 +22,12 @@ if test -L $config_fish
     unlink $config_fish
 end
 if test -d $config_fish
-    echo "Removing the config.fish file"
-    rm -f $config_fish
+    echo "Removing the existing fish configs ..."
+    rm -rf $config_fish
 end
 
 ln -s ~/repos/dotfiles/nvim $nvim_configs 
-ln -s ~/repos/dotfiles/fish/config.fish $config_fish 
+ln -s ~/repos/dotfiles/fish $config_fish 
 
 source $config_fish
 
