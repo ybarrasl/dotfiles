@@ -29,7 +29,7 @@ end
 ln -s ~/repos/dotfiles/nvim $nvim_configs 
 ln -s ~/repos/dotfiles/fish $config_fish 
 
-source $config_fish
+source $config_fish/config.fish
 
 echo " Curl is required, installing ... "
 sudo apt install -y curl neovim
