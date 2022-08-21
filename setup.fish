@@ -4,7 +4,7 @@ echo " ##### Perfoming setup config files #####"
 # Create links
 echo " ##### Setting up Symlinks #####"
 set nvim_configs ~/.config/nvim
-set config_fish ~/.config/fish/config.fish
+set config_fish ~/.config/fish
 
 # If there is already a symlink or hardcoded file for the nvim config remove it.
 if test -L $nvim_configs
@@ -21,7 +21,7 @@ if test -L $config_fish
     echo "Unlinking $config_fish..."
     unlink $config_fish
 end
-if test -f $config_fish
+if test -d $config_fish
     echo "Removing the config.fish file"
     rm -f $config_fish
 end
